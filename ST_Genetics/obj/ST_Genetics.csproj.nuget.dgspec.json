@@ -4,6 +4,62 @@
     "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\ST_Genetics\\ST_Genetics.csproj": {}
   },
   "projects": {
+    "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Business\\Business.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Business\\Business.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\DataAccess\\DataAccess.csproj"
+              },
+              "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\DataAccess\\DataAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\DataAccess\\DataAccess.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Entities\\Entities.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Entities\\Entities.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\ST_Genetics\\ST_Genetics.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +88,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Business\\Business.csproj"
+              },
+              "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\nicol\\OneDrive\\Documentos\\N\\STG\\ST_Genetics\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
