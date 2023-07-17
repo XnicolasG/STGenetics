@@ -16,6 +16,7 @@
 <table class="table table-hover table-bordered">
     <thead>
         <tr>
+            <th>Check</th>
             <th>ID</th>
             <th>Name</th>
             <th>Birth</th>
@@ -23,12 +24,16 @@
             <th>Breed</th>
             <th>Gender</th>
             <th>Status</th>
+            <th>Update</th>
         </tr>
     </thead>
     <tbody>
         @foreach(var animals in Animals)
         {
             <tr>
+                <td>
+                    <InputCheckbox />
+                </td>
                 <td>
                     @animals.AnimalId
                 </td>
@@ -50,11 +55,11 @@
                 <td>
                     @animals.Status
                 </td>
+                <td><a href="/UpdateForm/@animals.AnimalId">Update</a></td>
             </tr>
         }
     </tbody>
 </table>
-@mssg
 @code {
     List<AnimalEntity> Animals = new List<AnimalEntity>();
     List<AnimalEntity> TempAnimals = new List<AnimalEntity>();

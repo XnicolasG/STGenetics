@@ -5,10 +5,6 @@
     <EditForm Model="oAnimal">
         <section>
             <div class="form-group">
-                <label>Reference:</label>
-                <InputText @bind-Value="oAnimal.AnimalId" class="form-control" />
-            </div>
-            <div class="form-group">
                 <label>Animal Name:</label>
                 <InputText @bind-Value="oAnimal.AnimalName" class="form-control" />
             </div>
@@ -53,21 +49,24 @@
                     }
                 </InputSelect>
             </div>
-            <input type="button" value="Add Animal" @onclick="AddAnimal" />
+            <input type="button" value="Update Animal" @onclick="UpdateAnimal" />
         </section>
 
     </EditForm>
 </div>
 
 @code {
+    [Parameter]
+    public string IdAnimal { get; set; }
+
     AnimalEntity oAnimal = new AnimalEntity();
     List<BreedEntity> Breeds = new List<BreedEntity>();
     List<GenderEntity> Genders = new List<GenderEntity>();
     List<StatusEntity> Status = new List<StatusEntity>();
 
-    private void AddAnimal()
+    private void UpdateAnimal()
     {
-        B_Animal.CreateAnimal(oAnimal);
+        B_Animal.UpdateAnimal(oAnimal);
         NavManager.NavigateTo("/animal/list");
     }
 
@@ -77,5 +76,6 @@
         Breeds = B_Breed.BreedList();
         Genders = B_Gender.GenderList();
         Status = B_Status.ListStatus();
+        oAnimal = B_Animal.AnimalById(IdAnimal);
     }
 }

@@ -1,0 +1,14 @@
+﻿@page "/UpdateForm/{IdAnimal}"
+
+<PageTitle>Create Aniaml Form</PageTitle>
+
+<C_UpdateAnimal IdAnimal="IdAnimal" />
+@code{
+    [Parameter]
+    public string IdAnimal { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        IdAnimal = IdAnimal;
+    }
+}

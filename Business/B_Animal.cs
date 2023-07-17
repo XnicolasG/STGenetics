@@ -17,6 +17,13 @@ namespace Business
                 return Db.AnimalsT.ToList();
             }
         }
+        public static AnimalEntity AnimalById(string id)  //Read
+        {
+            using (var Db = new InventaryContext())
+            {
+                return Db.AnimalsT.ToList().LastOrDefault(x=>x.AnimalId== id);
+            }
+        }
         public static void CreateAnimal(AnimalEntity oAnimal) //Create
         {
             using (var Db = new InventaryContext())
@@ -25,7 +32,7 @@ namespace Business
                 Db.SaveChanges();
             }
         }
-        public void UpdateAnimal (AnimalEntity oAnimal) //Update
+        public static void UpdateAnimal (AnimalEntity oAnimal) //Update
         {
             using (var Db = new InventaryContext())
             {

@@ -20,10 +20,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/C_CreateAnimal.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ19DcmVhdGVBbmltYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,12 +28,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ19MaXN0QW5pbWFscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/C_UpdateAnimal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ19VcGRhdGVBbmltYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/P_CreateForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUF9DcmVhdGVGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/P_ListAnimals.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUF9MaXN0QW5pbWFscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/P_UpdateForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUF9VcGRhdGVGb3JtLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Shared/SurveyPrompt.razor]
