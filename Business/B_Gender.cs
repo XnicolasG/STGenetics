@@ -10,7 +10,7 @@ namespace Business
 {
     public class B_Gender
     {
-        public List<GenderEntity> GenderList()
+        public static List<GenderEntity> GenderList()
         {
             using (var Db = new InventaryContext())
             {
@@ -18,7 +18,7 @@ namespace Business
             }
 
         }
-    public void CreateGender(GenderEntity oGender)
+    public static void CreateGender(GenderEntity oGender)
     {
         using (var Db = new InventaryContext())
         {
@@ -26,7 +26,7 @@ namespace Business
             Db.SaveChanges();
         }
     }
-    public void UpdateGender(GenderEntity oGender)
+    public static void UpdateGender(GenderEntity oGender)
         {
             using (var Db = new InventaryContext())
             {
@@ -34,7 +34,7 @@ namespace Business
                 Db.SaveChanges();
             }
         }
-    public void RemoveGender(GenderEntity oGender)
+    public static void RemoveGender(GenderEntity oGender)
         {
             using (var Db = new InventaryContext())
             {

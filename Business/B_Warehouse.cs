@@ -10,14 +10,14 @@ namespace Business
 {
     public class B_Warehouse
     {
-        public List<WarehouseEntity> ListWarehouse()
+        public static List<WarehouseEntity> ListWarehouse()
         {
             using (var Db = new InventaryContext())
             {
                 return Db.WarehouseT.ToList();
             }
         }
-        public void CreateWarehouse(WarehouseEntity oWarehouse)
+        public static void CreateWarehouse(WarehouseEntity oWarehouse)
         {
             using (var Db = new InventaryContext())
             {
@@ -25,7 +25,7 @@ namespace Business
                 Db.SaveChanges();
             }
         }
-        public void UpdateWarehouse(WarehouseEntity oWarehouse)
+        public static void UpdateWarehouse(WarehouseEntity oWarehouse)
         {
             using (var Db = new InventaryContext())
             {
@@ -33,7 +33,7 @@ namespace Business
                 Db.SaveChanges();
             }
         }
-        public void RemoveWarehouse(WarehouseEntity oWarehouse)
+        public static void RemoveWarehouse(WarehouseEntity oWarehouse)
         {
             using (var Db = new InventaryContext())
             {

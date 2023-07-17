@@ -10,14 +10,14 @@ namespace Business
 {
     public class B_Trade
     {
-        public List<TradeEntity> ListTrade()
+        public static List<TradeEntity> ListTrade()
         {
             using (var Db = new InventaryContext())
             {
                 return Db.TradeT.ToList();
             }
         }
-        public void CreateTrade(TradeEntity oTrade)
+        public static void CreateTrade(TradeEntity oTrade)
         {
             using (var Db = new InventaryContext())
             {
@@ -25,7 +25,7 @@ namespace Business
                 Db.SaveChanges();
             }
         }
-        public void UpdateTrade(TradeEntity oTrade)
+        public static void UpdateTrade(TradeEntity oTrade)
         {
             using (var Db = new InventaryContext())
             {
@@ -33,7 +33,7 @@ namespace Business
                 Db.SaveChanges();
             }
         }
-        public void RemoveTrade(TradeEntity oTrade)
+        public static void RemoveTrade(TradeEntity oTrade)
         {
             using (var Db = new InventaryContext())
             {

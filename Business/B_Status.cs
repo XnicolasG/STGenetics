@@ -10,14 +10,14 @@ namespace Business
 {
     public class B_Status
     {
-        public List<StatusEntity> ListStatus()
+        public static List<StatusEntity> ListStatus()
         {
             using (var Db = new InventaryContext())
             {
                 return Db.StatusT.ToList();
             }
         }
-        public void CreateStatus (StatusEntity oStatus) 
+        public static void CreateStatus (StatusEntity oStatus) 
         {
             using (var Db = new InventaryContext())
             {
@@ -25,7 +25,7 @@ namespace Business
                 Db.SaveChanges();
             }
         }
-        public void UpdateStatus (StatusEntity oStatus) 
+        public static void UpdateStatus (StatusEntity oStatus) 
         {
             using (var Db = new InventaryContext())
             {
@@ -33,7 +33,7 @@ namespace Business
                 Db.SaveChanges();
             }
         }
-        public void RemoveStatus (StatusEntity oStatus) 
+        public static void RemoveStatus (StatusEntity oStatus) 
         {
             using (var Db= new InventaryContext())
             {

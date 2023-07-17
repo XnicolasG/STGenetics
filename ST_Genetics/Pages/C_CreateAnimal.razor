@@ -1,0 +1,79 @@
+﻿@using Entities
+@using Business
+<div>
+    <EditForm Model="oAnimal">
+        <section>
+            <div class="form-group">
+                <label>Reference:</label>
+                <InputText @bind-Value="oAnimal.AnimalId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Animal Name:</label>
+                <InputText @bind-Value="oAnimal.AnimalName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Animal Birth:</label>
+                <InputDate @bind-Value="oAnimal.DateOfBirth" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Animal Price:</label>
+                <InputNumber @bind-Value="oAnimal.AnimalPrice" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Animal Breed:</label>
+                <InputSelect @bind-Value="oAnimal.BreedId">
+                    @foreach(var breed in Breeds)
+                    {
+                        <option value="@breed.BreedId" class="form-control">
+                            @breed.BreedName
+                        </option>
+                    }
+                </InputSelect>
+            </div>
+            <div class="form-group">
+                <label>Animal Gender:</label>
+                <InputSelect @bind-Value="oAnimal.GenderId">
+                    @foreach (var gender in Genders)
+                    {
+                        <option value="@gender.GenderId" class="form-control">
+                            @gender.GenderName
+                        </option>
+                    }
+                </InputSelect>
+            </div>
+            <div class="form-group">
+                <label>Animal Status:</label>
+                <InputSelect @bind-Value="oAnimal.StatusId">
+                    @foreach (var status in Status)
+                    {
+                        <option value="@status.StatusId" class="form-control">
+                            @status.StatusName
+                        </option>
+                    }
+                </InputSelect>
+            </div>
+            <input type="button" value="Add Animal" @onclick="AddAnimal" />
+        </section>
+
+    </EditForm>
+</div>
+
+@code {
+    AnimalEntity oAnimal = new AnimalEntity();
+    List<BreedEntity> Breeds = new List<BreedEntity>();
+    List<GenderEntity> Genders = new List<GenderEntity>();
+    List<StatusEntity> Status = new List<StatusEntity>();
+
+    private void AddAnimal()
+    {
+        B_Animal.CreateAnimal(oAnimal);
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Breeds = B_Breed.BreedList();
+        Genders = B_Gender.GenderList();
+        Status = B_Status.ListStatus();
+    }
+}

@@ -10,7 +10,7 @@ namespace Business
 {
     public class B_Breed
     {
-        public List<BreedEntity> BreedList() //method bring data
+        public static List<BreedEntity> BreedList() //method bring data
         {
             using (var Db = new InventaryContext()) 
             {
@@ -18,7 +18,7 @@ namespace Business
             }
         }
 
-        public void CreateBreed(BreedEntity oBreed) //object that save data
+        public  static void CreateBreed(BreedEntity oBreed) //object that save data
         {
             using (var Db = new InventaryContext())
             {
@@ -27,7 +27,7 @@ namespace Business
             }
         }
 
-        public void UpdateBreed(BreedEntity oBreed) //Object that Update data
+        public static void UpdateBreed(BreedEntity oBreed) //Object that Update data
         {
             using (var Db = new InventaryContext())
             {
@@ -35,7 +35,7 @@ namespace Business
                 Db.SaveChanges();
             }
         }
-        public void RemoveBreed(BreedEntity oBreed) //Object that Removes data
+        public static void RemoveBreed(BreedEntity oBreed) //Object that Removes data
         {
             using (var Db = new InventaryContext())
             {

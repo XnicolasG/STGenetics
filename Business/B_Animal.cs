@@ -10,14 +10,14 @@ namespace Business
 {
     public class B_Animal
     {
-        public List<AnimalEntity> AnimalList()  //Read
+        public static List<AnimalEntity> AnimalList()  //Read
         {
             using(var Db = new InventaryContext())
             {
                 return Db.AnimalsT.ToList();
             }
         }
-        public void CreateAnimal(AnimalEntity oAnimal) //Create
+        public static void CreateAnimal(AnimalEntity oAnimal) //Create
         {
             using (var Db = new InventaryContext())
             {
@@ -33,7 +33,7 @@ namespace Business
                 Db.SaveChanges();
             }
         }
-        public void RemoveAnimal (AnimalEntity oAnimal) //Remove
+        public static void RemoveAnimal (AnimalEntity oAnimal) //Remove
         {
             using (var Db = new InventaryContext())
             {

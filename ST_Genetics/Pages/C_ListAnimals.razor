@@ -1,0 +1,78 @@
+﻿@using Entities
+@using Business
+
+
+<hr />
+<select class="form-control" @onchange="BreedChange">
+    <option>-- Select a Breed--</option>
+    @foreach (var breeds in Breeds)
+    {
+        <option value="@breeds.BreedId">@breeds.BreedName</option>
+    }
+</select>
+<hr />
+
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Birth</th>
+            <th>Price</th>
+            <th>Breed</th>
+            <th>Gender</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var animals in Animals)
+        {
+            <tr>
+                <td>
+                    @animals.AnimalId
+                </td>
+                <td>
+                    @animals.AnimalName
+                </td>
+                <td>
+                    @animals.DateOfBirth
+                </td>
+                <td>
+                    @animals.AnimalPrice
+                </td>
+                <td>
+                    @animals.Breed
+                </td>
+                <td>
+                    @animals.Gender
+                </td>
+                <td>
+                    @animals.Status
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@mssg
+@code {
+    List<AnimalEntity> Animals = new List<AnimalEntity>();
+    List<AnimalEntity> TempAnimals = new List<AnimalEntity>();
+
+    List<BreedEntity> Breeds = new List<BreedEntity>();
+
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        Animals = B_Animal.AnimalList();
+        TempAnimals = Animals; //load the cahreged data in Animals
+        Breeds = B_Breed.BreedList();
+    }
+
+    private void BreedChange(ChangeEventArgs b)
+    {
+
+        TempAnimals = Animals.Where(x => x.AnimalId == b.Value.ToString()).ToList();
+    }
+}
