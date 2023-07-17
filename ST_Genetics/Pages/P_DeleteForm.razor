@@ -1,0 +1,14 @@
+﻿@page "/DeleteForm/{IdAnimal}"
+
+<PageTitle>Remove Aniaml Form</PageTitle>
+
+<C_DeleteAnimal IdAnimal="IdAnimal" />
+@code{
+    [Parameter]
+    public string IdAnimal { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        IdAnimal = IdAnimal;
+    }
+}

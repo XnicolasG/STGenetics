@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ19DcmVhdGVBbmltYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/C_DeleteAnimal .razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ19EZWxldGVBbmltYWwgLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/C_ListAnimals.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ19MaXN0QW5pbWFscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/P_CreateForm.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUF9DcmVhdGVGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/P_DeleteForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUF9EZWxldGVGb3JtLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nicol/OneDrive/Documentos/N/STG/ST_Genetics/ST_Genetics/Pages/P_ListAnimals.razor]
